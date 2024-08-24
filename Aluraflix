@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="style.css">
+:root {
+    --cor-primaria: #ff5733;
+    --cor-secundaria: #333333;
+    --cor-fundo: #f0f0f0;
+}
+body {
+    background-color: var(--cor-fundo);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.titulo {
+    color: var(--cor-primaria);
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video {
+    width: 100%;
+    max-width: 600px;
+    margin: 10px auto;
+}
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.titulo {
+    font-weight: 700;
+}
+<div class="container">
+    <h2 class="titulo">Minha Fila de Vídeos</h2>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/video1" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video">
+        <iframe src="https://www.youtube.com/embed/video2" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+.video:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
